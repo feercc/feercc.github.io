@@ -6,7 +6,11 @@ export default defineUserConfig({
   description: 'feer.icu文档',
   base: '/babel/',
   theme: defaultTheme({
-    repo: 'https://github.com/feericu/',
+    repo: 'https://github.com/feericu',
+    docsRepo: 'https://github.com/feericu',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/feericu.github.io/edit/:branch/:path',
     editLinkText: '在 GitHub 上编辑此页',
     lastUpdatedText: '上次更新',
     contributors: false,
