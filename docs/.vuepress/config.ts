@@ -1,9 +1,11 @@
 import { defaultTheme, defineUserConfig } from 'vuepress'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'feer.icu',
-  description: 'feer.icu文档',
+  title: '首页',
+  description: 'doc文档，前端文档汇总',
   base: '/babel/',
   theme: defaultTheme({
     repo: 'https://github.com/feericu',
@@ -31,7 +33,7 @@ export default defineUserConfig({
     toggleSidebar: '切换侧边栏',
   }),
   plugins: [
-    // backToTopPlugin(),
+    backToTopPlugin(),
     // docsearchPlugin({
     //   // 配置
     //   apiKey: '1',
@@ -39,5 +41,9 @@ export default defineUserConfig({
     //   appId: '2',
     //   placeholder: '搜索文档'
     // })
+    googleAnalyticsPlugin({
+      // 配置项
+      id: 'G-Q6MTFEY5YY'
+    })
   ]
 })
