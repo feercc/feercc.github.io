@@ -6,7 +6,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '首页',
   description: 'doc文档，前端文档汇总',
-  base: '/',
+  base: '/fe-interview/',
   theme: defaultTheme({
     repo: 'https://github.com/feericu',
     docsRepo: 'https://github.com/feericu',
