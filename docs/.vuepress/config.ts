@@ -1,15 +1,17 @@
 import { defaultTheme, defineUserConfig } from 'vuepress'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import navbar from './navbar'
+import sidebar from './sidebar'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: '首页',
-  description: 'doc文档，前端文档汇总',
+  title: 'FE情报局',
+  description: '前端面试汇总',
   base: '/fe-interview/',
   theme: defaultTheme({
-    repo: 'https://github.com/feericu',
-    docsRepo: 'https://github.com/feericu',
+    repo: 'https://github.com/feercc',
+    docsRepo: 'https://github.com/feercc',
     docsBranch: 'main',
     docsDir: 'docs',
     editLinkPattern: ':repo/feericu.github.io/edit/:branch/:path',
@@ -20,6 +22,9 @@ export default defineUserConfig({
     tip: '提示',
     warning: '注意',
     danger: '警告',
+    navbar,
+    sidebar,
+    sidebarDepth: 1,
     notFound: [
       '这里什么都没有',
       '我们怎么到这来了？',
