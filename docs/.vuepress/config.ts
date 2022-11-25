@@ -8,7 +8,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'FE情报局',
   description: '前端面试汇总',
-  base: '/fe-interview/',
+  base: '/',
   theme: defaultTheme({
     repo: 'https://github.com/feercc',
     docsRepo: 'https://github.com/feercc',
